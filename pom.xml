@@ -4,7 +4,7 @@
   <artifactId>corejava</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>Core Java Practise</name>
-  <description>Daily Dose - A sum total place to refer or to clear any doubts.</description>
+  <description>Daily Dose - A sum total place to refer or to clear any doubts. Additionally Used for Concept Clearing.</description>
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
