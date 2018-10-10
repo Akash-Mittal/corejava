@@ -3,22 +3,20 @@ package com.practise.recursion;
 import static org.hamcrest.CoreMatchers.is;
 
 import java.math.BigDecimal;
-import java.util.function.Predicate;
 
 import org.junit.Assert;
 import org.junit.Test;
 
+import com.am.innovations.Validators;
+import com.google.common.base.Predicates;
+
 public class Factorial {
 
-	Predicate<Number> checkIfNotNull = input -> input != null;
-	Predicate<Number> checkIfValueGreaterThan0 = input -> input.intValue() > 0;
-	Predicate<Number> checkIfValueEqualTo1 = input -> input.intValue() == 1;
-	Predicate<Number> checkIfValueLessThan2 = input -> input.intValue() < 2;
-
-	public String getBigFactorialRecursive(Integer number) {
+	public String getBigFactorialIterative(Integer number) {
 		BigDecimal factorial = BigDecimal.ZERO;
-		if (checkIfNotNull.test(number)) {
-			if ((checkIfValueGreaterThan0).test(number)) {
+
+		if (Predicates.notNull().test(number)) {
+			if (Validators.checkIfGreaterThan.test(number, 0)) {
 				factorial = BigDecimal.ONE;
 				for (int i = number; i > 0; i--) {
 					factorial = factorial.multiply(BigDecimal.valueOf(i));
@@ -35,8 +33,8 @@ public class Factorial {
 	}
 
 	public int getFactorialRecursiveSimple(int number) {
-		if (checkIfValueGreaterThan0.test(number)) {
-			if (checkIfValueEqualTo1.test(number)) {
+		if (Validators.checkIfGreaterThan.test(number, 0)) {
+			if (Validators.checkIfEqualsTo.test(number, 1)) {
 				return 1;
 			} else {
 				return number * getFactorialRecursiveSimple(number - 1);
@@ -48,8 +46,8 @@ public class Factorial {
 	}
 
 	public String getBigFactorialRecursive(BigDecimal factorial) {
-		if (checkIfValueGreaterThan0.test(factorial)) {
-			if ((checkIfValueEqualTo1).test(factorial)) {
+		if (Validators.checkIfGreaterThan.test(factorial, 0)) {
+			if (Validators.checkIfEqualsTo.test(factorial, 1)) {
 				return "1";
 			} else {
 				return factorial.multiply(new BigDecimal(getBigFactorialRecursive(factorial.subtract(BigDecimal.ONE))))
@@ -64,9 +62,9 @@ public class Factorial {
 	@Test
 	public void testFactorialValid() {
 		Factorial factorial = new Factorial();
-		for (int i = -10; i < 13; i++) {
-			Assert.assertThat(factorial.getBigFactorialRecursive(i), is(factorial.getFactorialRecursiveSimple(i) + ""));
-			Assert.assertThat(factorial.getBigFactorialRecursive(i),
+		for (int i = 0; i < 1; i++) {
+			Assert.assertThat(factorial.getBigFactorialIterative(i), is(factorial.getFactorialRecursiveSimple(i) + ""));
+			Assert.assertThat(factorial.getBigFactorialIterative(i),
 					is(factorial.getBigFactorialRecursive(BigDecimal.valueOf(i))));
 		}
 	}
