@@ -11,9 +11,9 @@ A Simple yet Effective Way to learn Recursion.
 ---
 ## The Following Program Consists of:
 
-1.) Simple `Recursive` Implementation With Primitive Type of `int`. 
-2.) `Iterative` Implementation to support `big-data` using `BigDecimal`.
-3.) `Recursive` Implementation to support `big-data` using `BigDecimal`.
+ *  Simple `Recursive` Implementation With Primitive Type of `int`. 
+ * `Iterative` Implementation to support `big-data` using `BigDecimal`.
+ * `Recursive` Implementation to support `big-data` using `BigDecimal`.
 
 ## Learnings:
 
