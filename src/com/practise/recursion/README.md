@@ -20,7 +20,7 @@ A Simple yet Effective Way to learn Recursion.
 * `Recursion` is a Program Calling itself to do same task.
 * The said task should be identical in nature.
 * The Current Task completion is dependent on Previous task.
-* The BigDecimal Was Used to very Large Numbers.
+* The BigDecimal Was Used to compute very Large Numbers.
 * Primitive `int` will be able to calculate till 12! only. 
 
 ### Disadvantage

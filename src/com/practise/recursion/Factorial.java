@@ -64,7 +64,7 @@ public class Factorial {
 	@Test
 	public void testFactorialValid() {
 		Factorial factorial = new Factorial();
-		for (int i = -10; i < 14; i++) {
+		for (int i = -10; i < 13; i++) {
 			Assert.assertThat(factorial.getBigFactorialRecursive(i), is(factorial.getFactorialRecursiveSimple(i) + ""));
 			Assert.assertThat(factorial.getBigFactorialRecursive(i),
 					is(factorial.getBigFactorialRecursive(BigDecimal.valueOf(i))));
