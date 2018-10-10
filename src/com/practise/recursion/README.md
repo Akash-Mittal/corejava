@@ -20,7 +20,7 @@ A Simple yet Effective Way to learn Recursion.
 * `Recursion` is a Program Calling itself to do same task.
 * The said task should be identical in nature.
 * The Current Task completion is dependent on Previous task.
-* The BigDecimal Was Used to compute very Large Numbers.
+* `BigDecimal` Can be Used to Compute very Large Numbers.
 * Primitive `int` will be able to calculate till 12! only. 
 
 ### Disadvantage
@@ -30,8 +30,5 @@ A Simple yet Effective Way to learn Recursion.
   
 * Keeping that as an assumption it is safe to say that `Recursive Functions` are
 
-	  * Dependent or on the Mercy of Calling Function for Validation Checks.
-	  * If you are brave enough to put `not null`, good  luck with your coding career :-.
-  
-
-  
+  * Dependent or on the Mercy of Calling Function for Validation Checks.
+  * If you are brave enough to put `not null`, good luck with your coding career :-.
