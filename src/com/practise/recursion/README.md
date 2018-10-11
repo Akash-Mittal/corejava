@@ -7,8 +7,11 @@ A Simple yet Effective Way to learn Recursion.
 * What are the Advantages and Disadvantages of Using recursion ?
 * How to Get the Factorial of a Very Large Number ?
 * How to fasten Test Driven Development ?
+* How to Check if Given Array is already Sorted or Not ?
+* How to Implement `Strategy Design Pattern` using `Enums`.
 
 ---
+
 ## The Following Program Consists of:
 
  *  Simple `Recursive` Implementation With Primitive Type of `int`. 
