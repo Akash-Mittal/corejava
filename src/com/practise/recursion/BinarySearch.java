@@ -7,8 +7,8 @@ import java.util.Arrays;
 
 import org.junit.Test;
 
-import com.am.innovations.LIMITS;
-import com.am.innovations.Validators;
+import com.am.innovations.validations.LIMITS;
+import com.am.innovations.validations.Validators;
 
 public class BinarySearch {
 
