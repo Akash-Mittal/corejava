@@ -18,7 +18,7 @@
 
 	<dependency>
 	    <groupId>com.github.Akash-Mittal</groupId>
-	    <artifactId>validators</artifactId>
+	    <artifactId>commons</artifactId>
 	    <version>master-SNAPSHOT</version>
 	</dependency>
 

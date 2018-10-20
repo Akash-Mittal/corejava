@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import org.junit.Assert;
 import org.junit.Test;
 
-import com.am.innovations.Validators;
+import com.am.innovations.validations.Validators;
 import com.google.common.base.Predicates;
 
 public class Factorial {
