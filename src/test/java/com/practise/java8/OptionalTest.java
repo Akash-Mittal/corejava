@@ -30,6 +30,7 @@ public class OptionalTest {
 		String retrievedVal = val.orElseThrow(() -> {
 			throw new InvalidArgumentException("Invalid");
 		});
+
 	}
 
 	@Test
@@ -57,6 +58,12 @@ public class OptionalTest {
 			finalResponse.append(defaultValue);
 		});
 		assertThat(finalResponse.toString(), is("Succesfull:" + value));
+	}
+
+	@Test
+	public void testWhenGettingValueFromOptionalUsingFilter() {
+		String value = "Beauty of Rome - is no more than a Whisper";
+		String defaultValue = "default";
 	}
 
 }
