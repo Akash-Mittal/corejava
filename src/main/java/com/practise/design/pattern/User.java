@@ -13,7 +13,7 @@ public class User extends Observable{
 	
 	 
 	 public User() {
-		// TODO Auto-generated constructor stub
+		// 
 	}
 
 	public User(boolean confirmed, String userName, String password,
